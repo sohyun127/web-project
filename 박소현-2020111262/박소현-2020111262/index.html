@@ -1,0 +1,183 @@
+<!doctype html>
+<!--2020111262-박소현-->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>untact travel</title>
+
+
+
+<style type="text/css">
+	
+body {
+	background-image: url("image/bg.jpg");
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+
+.title1 {
+	margin: auto;
+	padding-top: 25px;
+	height: 100px;
+	width: 500px;
+}
+
+.box_600w {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: 300px;
+	width: 600px;
+	border-style: none;
+}
+.nv {
+	margin: auto;
+	height: 50px;
+	width: 1200px;
+}
+.box_300 {
+	float: left;
+	height: 300px;
+	width: 300px;
+}
+
+
+#layout {
+	height: 1800px;
+	width: 1200px;
+}
+
+
+.box_600h {
+	float: left;
+	height: 600px;
+	width: 300px;
+}
+
+
+.layout_02 {
+	float: left;
+	height: 600px;
+	width: 300px;
+}
+.layout_03 {
+	float: left;
+	height: 600px;
+	width: 600px;
+}
+.layout_03 {
+	float: left;
+	height: 600px;
+	width: 600px;
+}
+.layout4 {
+	float: left;
+	height: 900px;
+	width: 300px;
+}
+.layout_05 {
+	float: left;
+	height: 900px;
+	width: 600px;
+}
+.layout_06 {
+	height: 200px;
+	width: 1200px;
+}
+.box_bot {
+	float: left;
+	height: 130px;
+	width: 1150px;
+	margin-top: 25px;
+	margin-left: 50px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+#JEJUIMG {
+}
+#BUSANIMG {
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('image/PLACE_롤링.jpg','image/PLACE2_롤링.jpg','image/FOOD2_롤링.jpg','image/FOOD_롤링.jpg')">
+
+<!--제목 로고 이미지 삽입-->
+<div class="title1"><img src="image/타이틀.jpg" width="500" height="100" alt=""/></div>
+<div class="nv"></div>
+<div class="layout" id="layout">
+<!--제주도 이미지 배치에 맞추어 삽입-->
+  <div class="box_600w">
+    <div id="JEJUIMG"><img src="image/제주 메인7.jpg" width="600" height="300" alt=""/></div>
+  </div>
+<div class="box_300"><img src="image/제주 메인.jpg" width="300" height="300" alt=""/></div>
+<div class="box_300"><img src="image/제주 메인2.jpg" width="300" height="300" alt=""/></div>
+<div class="layout_02">
+  <div class="box_300"><img src="image/제주 메인4.jpg" width="300" height="300" alt=""/></div>
+  <img src="image/제주 메인6.jpg" width="300" height="300" alt=""/></div>
+<div class="layout_03">
+	<!--PLACE 롤오버이미지 기능, JEJU_PLACE.html로 링크 연결 -->
+  <div class="box_300"><a href="JEJU_PLACE.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('JEJUPLACE','','image/PLACE_롤링.jpg',1)"><img src="image/PLACE.jpg" alt="JEJU_PLACE페이지로 이동" width="300" height="300" id="JEJUPLACE"></a></div>
+	<!--FOOD 롤오버이미지 기능, JEJU_FOOD.html로 링크 연결 -->
+  <div class="box_300"><a href="JEJU_FOOD.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('JEJU_FOOD','','image/FOOD_롤링.jpg',1)"><img src="image/FOOD.jpg" alt="" width="300" height="300" id="JEJU_FOOD"></a></div>
+  <div class="box_600w"><img src="image/제주 메인5.jpg" width="600" height="300" alt=""/></div>
+ </div>
+<div class="box_600h"><img src="image/제주 메인3.jpg" width="300" height="600" alt=""/></div>
+<div class="layout4">
+<div class="box_300">
+  <div id="BUSANIMG"><img src="image/부산 메인2.jpg" width="300" height="300" alt=""/></div>
+</div>
+<div class="box_600h"><img src="image/부산 메인1.jpg" width="300" height="600" alt=""/></div>
+  
+</div>
+<div class="layout4">
+  <div class="box_300"><img src="image/부산 메인4.jpg" width="300" height="300" alt=""/></div>
+  <!--PLACE 롤오버이미지 기능, BUSAN_PLACE.html로 링크 연결 -->
+  <div class="box_300"><a href="BUSAN_PLACE.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('BUSANPLACE','','image/PLACE2_롤링.jpg',1)"><img src="image/PLACE2.jpg" alt="" width="300" height="300" id="BUSANPLACE"></a></div>
+  <div class="box_300"><img src="image/부산 메인8.jpg" width="300" height="300" alt=""/></div>
+</div>
+<div class="layout_05">
+  <div class="box_300"><img src="image/부산 메인7.jpg" width="300" height="300" alt=""/></div>
+  <div class="box_300"><img src="image/부산 메인5.jpg" width="300" height="300" alt=""/></div>
+	<!--FOOD 롤오버이미지 기능, BUSAN_FOOD.html로 링크 연결 -->
+<div class="box_300"><a href="BUSAN_FOOD.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('BUSAN_FOOD','','image/FOOD2_롤링.jpg',1)"><img src="image/FOOD2.jpg" alt="" width="300" height="300" id="BUSAN_FOOD"></a></div>
+  <div class="box_300"><img src="image/부산 메인6.jpg" width="300" height="300" alt=""/></div>
+  <div class="box_600w"><img src="image/부산 메인3.jpg" width="600" height="300" alt=""/></div>
+</div>
+</div>
+<div class="layout_06">
+<!--맨아래 상세정보 표시 -->
+  <div class="box_bot">
+    <h3>Contact info</h3> 
+    <hr/>
+    <p>SWU_Digital Media / sohyun4051@gmail.com  </p>
+  </div>
+</div>
+</body>
+</html>
